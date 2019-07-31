@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Testme Login Test",
+        "description": "",
+        "id": "testmeapp-end-to-end-test;testme-login-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1310300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open testmeapp online",
+            "match": {
+              "location": "Stepdefs.user_open_testmeapp_online()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 235800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter username as \"lalitha\" And password as \"Password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lalitha\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Password123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "Stepdefs.user_enter_username_as_And_password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on Login button",
+            "match": {
+              "location": "Stepdefs.click_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify login success",
+            "match": {
+              "location": "Stepdefs.verify_login_success()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Search product",
+        "description": "",
+        "id": "testmeapp-end-to-end-test;search-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 151300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter \"laptop\" in search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptop\"",
+                  "offset": 11
+                }
+              ],
+              "location": "Stepdefs.user_enter_in_search_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify testmeapp displays related items page",
+            "match": {
+              "location": "Stepdefs.verify_testmeapp_displays_related_items_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Search product",
+        "description": "",
+        "id": "testmeapp-end-to-end-test;search-product;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 120300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter \"travel kit\" in search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"travel kit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "Stepdefs.user_enter_in_search_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify testmeapp displays related items page",
+            "match": {
+              "location": "Stepdefs.verify_testmeapp_displays_related_items_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Testme Logout Test",
+        "description": "",
+        "id": "testmeapp-end-to-end-test;testme-logout-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on logout button",
+            "match": {
+              "location": "Stepdefs.user_clicks_on_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify logout success",
+            "match": {
+              "location": "Stepdefs.verify_logout_success()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout"
+          }
+        ]
+      }
+    ],
+    "name": "TestMeApp End to End Test",
+    "description": "",
+    "id": "testmeapp-end-to-end-test",
+    "keyword": "Feature",
+    "uri": "src/test/resources/skeleton/scenario2.feature",
+    "tags": []
+  }
+]
